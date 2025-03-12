@@ -1,0 +1,37 @@
+ {
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "Node10",
+		"target": "es6",
+		"outDir": "build",
+		"lib": [
+			"es6",
+			"es2021",
+			"DOM"
+		],
+		"sourceMap": true,
+		"rootDir": "./extension",
+		"baseUrl": "./extension",
+		"strict": true,   /* enable all strict type-checking options */
+		/* Additional Checks */
+		// "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
+		// "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
+		// "noUnusedParameters": true,  /* Report errors on unused parameters. */
+
+		"noImplicitAny": false,
+		"removeComments": false,
+		"noUnusedLocals": true,
+		"noImplicitThis": true,
+		"inlineSourceMap": false,
+		"preserveConstEnums": true,
+		"strictNullChecks": true,
+		"noUnusedParameters": false,
+		"esModuleInterop": true,
+	},
+	"include": ["extension/**/*"],
+	"exclude": [
+		"node_modules",
+		"node_modules/svelte",
+		"ui"
+	]
+}
