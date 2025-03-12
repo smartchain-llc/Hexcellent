@@ -1,0 +1,8 @@
+{
+    "name": "hexcellent",
+    "version": "0.0.1.0",
+    "scripts": {
+        "package":"",
+        "build": ""
+    }
+}
