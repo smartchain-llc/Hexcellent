@@ -1,15 +1,13 @@
 <script lang="ts">
-  const prefixes = {
-    hex: '0x',
-    bin: '0b',
-    oct: '0o',
-  }
-  let prefix = $state('hex')
+  import { BytePrefixes, type ByteRadix } from "../../core/Radix"
+
+
+  let {radix }: {radix: ByteRadix}= $props()
 </script>
 
 <div class="container">
   <div class="display">
-    <div class="prefix">{prefixes[prefix]}</div>
+    <div class="prefix">{BytePrefixes[radix]}</div>
     <div class="content">12346</div>
   </div>
 </div>
