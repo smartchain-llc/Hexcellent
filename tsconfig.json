@@ -3,6 +3,9 @@
 		"module": "commonjs",
 		"moduleResolution": "Node10",
 		"target": "es6",
+		"paths": {
+			"*": ["*"]
+		},
 		"outDir": "build",
 		"lib": [
 			"es6",
