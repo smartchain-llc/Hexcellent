@@ -1,13 +1,14 @@
 <script lang="ts">
   import InputDisplay from './components/input/InputDisplay.svelte'
-    import type { ByteRadix } from './core/Radix'
+    import { Hexidecimal, type ByteRadixId, type Radix } from './core/Radix'
 
-    let radix = $state<ByteRadix>('bin')
+    let radix = $state<Radix>(Hexidecimal)
+    let inputValue = $state(0)
 </script>
 
 <main>
 <div class="app-container">
-    <InputDisplay {radix}/>
+    <InputDisplay {radix} {inputValue}/>
 </div>
 </main>
 
